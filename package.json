@@ -57,7 +57,8 @@
     "shelljs": "latest",
     "snyk": "^1.17.5",
     "underscore": "^1.8.3",
-    "view-helpers": "latest"
+    "view-helpers": "latest",
+    "xml2json": "^0.10.0"
   },
   "devDependencies": {
     "babel-core": "^6.7.2",
