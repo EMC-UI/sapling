@@ -1,0 +1,2916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="33" passed="32">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SmokeTest" duration-ms="300630" started-at="2016-08-24T19:33:38Z" finished-at="2016-08-24T19:38:38Z">
+    <groups>
+    </groups>
+    <test name="LogIn" duration-ms="2002" started-at="2016-08-24T19:33:38Z" finished-at="2016-08-24T19:33:40Z">
+      <class name="core.tests.BaseTest">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:core.tests.BaseTest@e25b2fe]" name="login" duration-ms="1988" started-at="2016-08-24T12:33:38Z" finished-at="2016-08-24T12:33:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- core.tests.BaseTest -->
+    </test> <!-- LogIn -->
+    <test name="Get All Log Sources" duration-ms="260" started-at="2016-08-24T19:33:40Z" finished-at="2016-08-24T19:33:40Z">
+      <class name="com.emc.itests.logmgr.tests.LogSourceTest">
+        <test-method status="PASS" signature="getAllLogSources(java.lang.String, java.lang.String, int, int, boolean, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogSourceTest@56ac3a89]" name="getAllLogSources" duration-ms="257" started-at="2016-08-24T12:33:40Z" finished-at="2016-08-24T12:33:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logSources]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[25]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllLogSources -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogSourceTest -->
+    </test> <!-- Get All Log Sources -->
+    <test name="Update log level to DEBUG mode for System Manager" duration-ms="1996" started-at="2016-08-24T19:33:40Z" finished-at="2016-08-24T19:33:42Z">
+      <class name="com.emc.itests.logmgr.tests.LogSourceTest">
+        <test-method status="PASS" signature="updateLogSourceByName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogSourceTest@5cb9f472]" name="updateLogSourceByName" duration-ms="1992" started-at="2016-08-24T12:33:40Z" finished-at="2016-08-24T12:33:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logSources/{logSourceId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[System Manager]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[DEBUG]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLogSourceByName -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogSourceTest -->
+    </test> <!-- Update log level to DEBUG mode for System Manager -->
+    <test name="Update log level to DEBUG mode for Configuration Manager" duration-ms="1435" started-at="2016-08-24T19:33:42Z" finished-at="2016-08-24T19:33:43Z">
+      <class name="com.emc.itests.logmgr.tests.LogSourceTest">
+        <test-method status="PASS" signature="updateLogSourceByName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogSourceTest@ff5b51f]" name="updateLogSourceByName" duration-ms="1431" started-at="2016-08-24T12:33:42Z" finished-at="2016-08-24T12:33:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logSources/{logSourceId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Configuration Manager]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[DEBUG]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLogSourceByName -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogSourceTest -->
+    </test> <!-- Update log level to DEBUG mode for Configuration Manager -->
+    <test name="Update log level to DEBUG mode for authservice" duration-ms="1500" started-at="2016-08-24T19:33:43Z" finished-at="2016-08-24T19:33:45Z">
+      <class name="com.emc.itests.logmgr.tests.LogSourceTest">
+        <test-method status="PASS" signature="updateLogSourceByName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogSourceTest@73846619]" name="updateLogSourceByName" duration-ms="1497" started-at="2016-08-24T12:33:43Z" finished-at="2016-08-24T12:33:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logSources/{logSourceId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Authentication]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[DEBUG]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLogSourceByName -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogSourceTest -->
+    </test> <!-- Update log level to DEBUG mode for authservice -->
+    <test name="Update log level to DEBUG mode for discovery" duration-ms="1627" started-at="2016-08-24T19:33:45Z" finished-at="2016-08-24T19:33:46Z">
+      <class name="com.emc.itests.logmgr.tests.LogSourceTest">
+        <test-method status="PASS" signature="updateLogSourceByName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogSourceTest@5025a98f]" name="updateLogSourceByName" duration-ms="1625" started-at="2016-08-24T12:33:45Z" finished-at="2016-08-24T12:33:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logSources/{logSourceId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Discovery]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[DEBUG]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLogSourceByName -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogSourceTest -->
+    </test> <!-- Update log level to DEBUG mode for discovery -->
+    <test name="XIO discovery at level of Device" duration-ms="43577" started-at="2016-08-24T19:33:46Z" finished-at="2016-08-24T19:34:30Z">
+      <class name="com.emc.itests.discovery.tests.DiscoveryJobTest">
+        <test-method status="PASS" signature="createCredential_ManagementInterface_DiscoveryJob(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, int, int, int, int, java.lang.String, boolean, boolean, boolean)[pri:0, instance:com.emc.itests.discovery.tests.DiscoveryJobTest@10bdf5e5]" name="createCredential_ManagementInterface_DiscoveryJob" duration-ms="43557" started-at="2016-08-24T12:33:46Z" finished-at="2016-08-24T12:34:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/tenants]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/api/v1/credentials]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Xtrem10]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[XIO Credential]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[/api/v1/managementInterfaces]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[XtremIO ManagementInterface]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[XMS for XtremIO discovery]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[XTREMIOMANAGEMENTSERVER]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.7.66.89]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[443]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/api/v1/discoveryJobs]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[Job for XTremIO discovery]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Discovery of XTremIO at level Protectabledata]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Device]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCredential_ManagementInterface_DiscoveryJob -->
+      </class> <!-- com.emc.itests.discovery.tests.DiscoveryJobTest -->
+    </test> <!-- XIO discovery at level of Device -->
+    <test name="Data Domain discovery at level of Device" duration-ms="32808" started-at="2016-08-24T19:34:30Z" finished-at="2016-08-24T19:35:03Z">
+      <class name="com.emc.itests.discovery.tests.DiscoveryJobTest">
+        <test-method status="PASS" signature="createCredential_ManagementInterface_DiscoveryJob(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, int, int, int, int, java.lang.String, boolean, boolean, boolean)[pri:0, instance:com.emc.itests.discovery.tests.DiscoveryJobTest@2038ae61]" name="createCredential_ManagementInterface_DiscoveryJob" duration-ms="32790" started-at="2016-08-24T12:34:30Z" finished-at="2016-08-24T12:35:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/tenants]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/api/v1/credentials]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[sysadmin]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[test12]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[DataDomainMangementCenter Credential]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[/api/v1/managementInterfaces]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[DataDomainManagementCenter ManagementInterface]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[DDMC for DD discovery]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[DATADOMAINMANAGEMENTCENTER]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.7.244.177]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[3009]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/api/v1/discoveryJobs]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[Job for DD discovery]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Discovery of DD at level Device]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[Device]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[300]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCredential_ManagementInterface_DiscoveryJob -->
+      </class> <!-- com.emc.itests.discovery.tests.DiscoveryJobTest -->
+    </test> <!-- Data Domain discovery at level of Device -->
+    <test name="VMAX3 discovery at level of ProtectableData" duration-ms="194219" started-at="2016-08-24T19:35:03Z" finished-at="2016-08-24T19:38:17Z">
+      <class name="com.emc.itests.discovery.tests.DiscoveryJobTest">
+        <test-method status="PASS" signature="createCredential_ManagementInterface_DiscoveryJob(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, int, int, int, int, java.lang.String, boolean, boolean, boolean)[pri:0, instance:com.emc.itests.discovery.tests.DiscoveryJobTest@21213b92]" name="createCredential_ManagementInterface_DiscoveryJob" duration-ms="194204" started-at="2016-08-24T12:35:03Z" finished-at="2016-08-24T12:38:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/tenants]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[/api/v1/credentials]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[#1Password]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[SMISPROVIDER Credential]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[/api/v1/managementInterfaces]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[SMISPROVIDER ManagementInterface]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[SMISPROVIDER for VMAX3 discovery]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[SMISPROVIDER]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[10.7.66.100]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[5989]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[/api/v1/discoveryJobs]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[Job for VMAX3 discovery]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[Discovery of VMAX3 at level Device]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[ProtectableData]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[900]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCredential_ManagementInterface_DiscoveryJob -->
+      </class> <!-- com.emc.itests.discovery.tests.DiscoveryJobTest -->
+    </test> <!-- VMAX3 discovery at level of ProtectableData -->
+    <test name="create tenant coke and verify by GET" duration-ms="322" started-at="2016-08-24T19:38:17Z" finished-at="2016-08-24T19:38:17Z">
+      <class name="tenant.tests.TenantsTest">
+        <test-method status="PASS" signature="createTenant(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, org.testng.ITestContext)[pri:0, instance:tenant.tests.TenantsTest@351d0846]" name="createTenant" duration-ms="316" started-at="2016-08-24T12:38:17Z" finished-at="2016-08-24T12:38:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/tenants]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8443]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Coke]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test tenant from automation]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[org.testng.TestRunner@36480b2d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTenant -->
+      </class> <!-- tenant.tests.TenantsTest -->
+    </test> <!-- create tenant coke and verify by GET -->
+    <test name="Get all roles in system and verify System Admin and Tenant Admin roles" duration-ms="245" started-at="2016-08-24T19:38:17Z" finished-at="2016-08-24T19:38:18Z">
+      <class name="tenant.tests.TenantsTest">
+        <test-method status="PASS" signature="getALLRoles(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, org.testng.ITestContext)[pri:0, instance:tenant.tests.TenantsTest@255b53dc]" name="getALLRoles" duration-ms="242" started-at="2016-08-24T12:38:17Z" finished-at="2016-08-24T12:38:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/roles]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8443]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[System Tenant Admin,Security Admin]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[org.testng.TestRunner@10b1a751]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getALLRoles -->
+      </class> <!-- tenant.tests.TenantsTest -->
+    </test> <!-- Get all roles in system and verify System Admin and Tenant Admin roles -->
+    <test name="Create user under System Tenant with role System Admin and verify it by GET" duration-ms="730" started-at="2016-08-24T19:38:18Z" finished-at="2016-08-24T19:38:18Z">
+      <class name="tenant.tests.TenantsTest">
+        <test-method status="PASS" signature="createUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, org.testng.ITestContext)[pri:0, instance:tenant.tests.TenantsTest@3b2c72c2]" name="createUser" duration-ms="722" started-at="2016-08-24T12:38:18Z" finished-at="2016-08-24T12:38:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/users]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8443]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[System Tenant Admin]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Automation]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[AutomationTest]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[TestUser]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[TestUser@gmail.com]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Changeme@1]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[org.testng.TestRunner@1352434e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+      </class> <!-- tenant.tests.TenantsTest -->
+    </test> <!-- Create user under System Tenant with role System Admin and verify it by GET -->
+    <test name="Get all Objective Definitions" duration-ms="153" started-at="2016-08-24T19:38:18Z" finished-at="2016-08-24T19:38:19Z">
+      <class name="com.emc.itests.configmgr.tests.ObjectiveDefinitionsTest">
+        <test-method status="PASS" signature="getAllObjectiveDefs(java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, boolean, java.lang.String, boolean)[pri:0, instance:com.emc.itests.configmgr.tests.ObjectiveDefinitionsTest@57175e74]" name="getAllObjectiveDefs" duration-ms="151" started-at="2016-08-24T12:38:18Z" finished-at="2016-08-24T12:38:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/objectiveDefinitions]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllObjectiveDefs -->
+      </class> <!-- com.emc.itests.configmgr.tests.ObjectiveDefinitionsTest -->
+    </test> <!-- Get all Objective Definitions -->
+    <test name="Create plan definition with multiple stages(epochs and objectives)" duration-ms="429" started-at="2016-08-24T19:38:19Z" finished-at="2016-08-24T19:38:19Z">
+      <class name="com.emc.itests.configmgr.tests.PlanDefinitionsTest">
+        <test-method status="PASS" signature="createPlanDefinitionWithRequiredFields(java.lang.String, java.lang.String, int, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.emc.itests.configmgr.tests.PlanDefinitionsTest@145eaa29]" name="createPlanDefinitionWithRequiredFields" duration-ms="415" started-at="2016-08-24T12:38:19Z" finished-at="2016-08-24T12:38:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8443]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[http]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[9760]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[plandefinition]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[ConfigurationManager]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[/api/v1/planDefinitions]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Acceptance Test]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[{'CONFIG':'true','VALIDATION':'false','PROTECTION':'false'}]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[INACTIVE]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[Stage1,Stage2]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[Stage1-P1D]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[Stage1-P3D]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[Stage1-Recovery Point,Stage1-Storage Class,Stage2-Compliance Verification]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[Stage1-Recovery Point-PT6H,Stage1-Storage Class-Protection,Stage2-Compliance Verification-PT1H]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[Stage1-{CONFIG:false;PROTECTION:true;VALIDATION:true},Stage2-{CONFIG:false;PROTECTION:false;VALIDATION:true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlanDefinitionWithRequiredFields -->
+      </class> <!-- com.emc.itests.configmgr.tests.PlanDefinitionsTest -->
+    </test> <!-- Create plan definition with multiple stages(epochs and objectives) -->
+    <test name="Activate planDefinition" duration-ms="568" started-at="2016-08-24T19:38:19Z" finished-at="2016-08-24T19:38:20Z">
+      <class name="com.emc.itests.configmgr.tests.PlanDefinitionsTest">
+        <test-method status="PASS" signature="updatePlanDefinition(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.emc.itests.configmgr.tests.PlanDefinitionsTest@41ee392b]" name="updatePlanDefinition" duration-ms="526" started-at="2016-08-24T12:38:19Z" finished-at="2016-08-24T12:38:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[/api/v1/planDefinitions/{planDefinitionId}]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Acceptance Test]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[ACTIVE]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="22">
+              <value is-null="true"/>
+            </param>
+            <param index="23">
+              <value is-null="true"/>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="26">
+              <value is-null="true"/>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="31">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="32">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="33">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="34">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="35">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="36">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="37">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="38">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updatePlanDefinition -->
+      </class> <!-- com.emc.itests.configmgr.tests.PlanDefinitionsTest -->
+    </test> <!-- Activate planDefinition -->
+    <test name="Create Plan with tenant Coke and above planDefinition" duration-ms="439" started-at="2016-08-24T19:38:20Z" finished-at="2016-08-24T19:38:20Z">
+      <class name="com.emc.itests.configmgr.tests.PlansTest">
+        <test-method status="PASS" signature="createPlan(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean, boolean, int, boolean, java.lang.String, java.lang.String)[pri:0, instance:com.emc.itests.configmgr.tests.PlansTest@ca263c2]" name="createPlan" duration-ms="430" started-at="2016-08-24T12:38:20Z" finished-at="2016-08-24T12:38:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AcceptanceTestPlan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord,Coke]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ENABLED]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[OMIT]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[upper]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="27">
+              <value is-null="true"/>
+            </param>
+            <param index="28">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlan -->
+      </class> <!-- com.emc.itests.configmgr.tests.PlansTest -->
+    </test> <!-- Create Plan with tenant Coke and above planDefinition -->
+    <test name="create tenant pepsi and verify by GET" duration-ms="250" started-at="2016-08-24T19:38:20Z" finished-at="2016-08-24T19:38:20Z">
+      <class name="tenant.tests.TenantsTest">
+        <test-method status="PASS" signature="createTenant(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, org.testng.ITestContext)[pri:0, instance:tenant.tests.TenantsTest@35083305]" name="createTenant" duration-ms="246" started-at="2016-08-24T12:38:20Z" finished-at="2016-08-24T12:38:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/tenants]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8443]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pepsi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test tenant from automation]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[org.testng.TestRunner@69923ac3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTenant -->
+      </class> <!-- tenant.tests.TenantsTest -->
+    </test> <!-- create tenant pepsi and verify by GET -->
+    <test name="Create Plan with tenant Pepsi and above planDefinition" duration-ms="462" started-at="2016-08-24T19:38:20Z" finished-at="2016-08-24T19:38:21Z">
+      <class name="com.emc.itests.configmgr.tests.PlansTest">
+        <test-method status="PASS" signature="createPlan(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean, boolean, int, boolean, java.lang.String, java.lang.String)[pri:0, instance:com.emc.itests.configmgr.tests.PlansTest@40e6dfe1]" name="createPlan" duration-ms="451" started-at="2016-08-24T12:38:20Z" finished-at="2016-08-24T12:38:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AcceptanceTestPlan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord,Pepsi]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ENABLED]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[OMIT]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[upper]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="27">
+              <value is-null="true"/>
+            </param>
+            <param index="28">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlan -->
+      </class> <!-- com.emc.itests.configmgr.tests.PlansTest -->
+    </test> <!-- Create Plan with tenant Pepsi and above planDefinition -->
+    <test name="Create Plan with above planDefinition for logged in tenant" duration-ms="337" started-at="2016-08-24T19:38:21Z" finished-at="2016-08-24T19:38:21Z">
+      <class name="com.emc.itests.configmgr.tests.PlansTest">
+        <test-method status="PASS" signature="createPlan(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean, boolean, int, boolean, java.lang.String, java.lang.String)[pri:0, instance:com.emc.itests.configmgr.tests.PlansTest@7d68ef40]" name="createPlan" duration-ms="328" started-at="2016-08-24T12:38:21Z" finished-at="2016-08-24T12:38:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[AcceptanceTestPlan]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ENABLED]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[OMIT]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[upper]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="27">
+              <value is-null="true"/>
+            </param>
+            <param index="28">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlan -->
+      </class> <!-- com.emc.itests.configmgr.tests.PlansTest -->
+    </test> <!-- Create Plan with above planDefinition for logged in tenant -->
+    <test name="Add asset to plan AcceptanceTestPlan " duration-ms="9649" started-at="2016-08-24T19:38:21Z" finished-at="2016-08-24T19:38:31Z">
+      <class name="com.emc.itests.configmgr.tests.PlansTest">
+        <test-method status="PASS" signature="addStorageGroupSubTypeAssetToPlan(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.emc.itests.configmgr.tests.PlansTest@5d740a0f]" name="addStorageGroupSubTypeAssetToPlan" duration-ms="9647" started-at="2016-08-24T12:38:21Z" finished-at="2016-08-24T12:38:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Prod_Host_SG]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[vmaxstoragegroup]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[/api/v1/plans/]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[AcceptanceTestPlan]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStorageGroupSubTypeAssetToPlan -->
+      </class> <!-- com.emc.itests.configmgr.tests.PlansTest -->
+    </test> <!-- Add asset to plan AcceptanceTestPlan  -->
+    <test name="Check compliance verification,configuration and protection workflows after adding asset to plan" duration-ms="246" started-at="2016-08-24T19:38:31Z" finished-at="2016-08-24T19:38:31Z">
+      <class name="com.emc.itests.dps.tests.DpsTest">
+        <test-method status="FAIL" signature="checkForWorkflows(java.lang.String, java.lang.String, int, int, int, int, int, int, int, int, int, int, int, int, int, int, boolean, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, boolean)[pri:0, instance:com.emc.itests.dps.tests.DpsTest@240237d2]" name="checkForWorkflows" duration-ms="241" started-at="2016-08-24T12:38:31Z" finished-at="2016-08-24T12:38:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AcceptanceTestPlan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The plan does not contain the expected number of workflows expected [4] but found [1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The plan does not contain the expected number of workflows expected [4] but found [1]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:372)
+	at com.emc.itests.dps.tests.DpsTest.checkForWorkflows(DpsTest.java:267)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+	at com.emc.brs.testng.TestNG.main(TestNG.java:72)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkForWorkflows -->
+      </class> <!-- com.emc.itests.dps.tests.DpsTest -->
+    </test> <!-- Check compliance verification,configuration and protection workflows after adding asset to plan -->
+    <test name="Create a logBundle" duration-ms="269" started-at="2016-08-24T19:38:31Z" finished-at="2016-08-24T19:38:31Z">
+      <class name="com.emc.itests.logmgr.tests.LogBundleTest">
+        <test-method status="PASS" signature="postLogBundle(java.lang.String, java.lang.String, int, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogBundleTest@17c386de]" name="postLogBundle" duration-ms="268" started-at="2016-08-24T12:38:31Z" finished-at="2016-08-24T12:38:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logBundles]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2016-02-28]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postLogBundle -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogBundleTest -->
+    </test> <!-- Create a logBundle -->
+    <test name="Get all LogBundles" duration-ms="66" started-at="2016-08-24T19:38:31Z" finished-at="2016-08-24T19:38:31Z">
+      <class name="com.emc.itests.logmgr.tests.LogBundleTest">
+        <test-method status="PASS" signature="getAllLogBundles(java.lang.String, java.lang.String, int, boolean, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogBundleTest@691a7f8f]" name="getAllLogBundles" duration-ms="64" started-at="2016-08-24T12:38:31Z" finished-at="2016-08-24T12:38:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logBundles]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllLogBundles -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogBundleTest -->
+    </test> <!-- Get all LogBundles -->
+    <test name="Verify Trial License exists upon deploying Skyline appliance" duration-ms="368" started-at="2016-08-24T19:38:31Z" finished-at="2016-08-24T19:38:32Z">
+      <class name="licensing.tests.LicensingTest">
+        <test-method status="PASS" signature="getAllLicenses(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:licensing.tests.LicensingTest@358c99f5]" name="getAllLicenses" duration-ms="142" started-at="2016-08-24T12:38:31Z" description="getAllLicenses" finished-at="2016-08-24T12:38:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/licenses]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TRIAL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getAllLicenses -->
+        <test-method status="PASS" signature="getLicenseById(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:licensing.tests.LicensingTest@358c99f5]" name="getLicenseById" duration-ms="225" started-at="2016-08-24T12:38:31Z" description="getLicenseById" finished-at="2016-08-24T12:38:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/licenses/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[TRIAL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLicenseById -->
+      </class> <!-- licensing.tests.LicensingTest -->
+    </test> <!-- Verify Trial License exists upon deploying Skyline appliance -->
+    <test name="Verify install of valid Emergency License" duration-ms="431" started-at="2016-08-24T19:38:32Z" finished-at="2016-08-24T19:38:32Z">
+      <class name="licensing.tests.LicensingTest">
+        <test-method status="PASS" signature="putLicense(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:licensing.tests.LicensingTest@7920ba90]" name="putLicense" duration-ms="429" started-at="2016-08-24T12:38:32Z" description="putLicense" finished-at="2016-08-24T12:38:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emergency]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[unlimited]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/api/v1/system/licenses/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putLicense -->
+      </class> <!-- licensing.tests.LicensingTest -->
+    </test> <!-- Verify install of valid Emergency License -->
+    <test name="Verify Install of Capacity License" duration-ms="269" started-at="2016-08-24T19:38:32Z" finished-at="2016-08-24T19:38:32Z">
+      <class name="licensing.tests.LicensingTest">
+        <test-method status="PASS" signature="putLicense(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:licensing.tests.LicensingTest@55a561cf]" name="putLicense" duration-ms="269" started-at="2016-08-24T12:38:32Z" description="putLicense" finished-at="2016-08-24T12:38:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[capacity]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[300]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/api/v1/system/licenses/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putLicense -->
+      </class> <!-- licensing.tests.LicensingTest -->
+    </test> <!-- Verify Install of Capacity License -->
+    <test name="Verify Install of Appliance License" duration-ms="264" started-at="2016-08-24T19:38:32Z" finished-at="2016-08-24T19:38:33Z">
+      <class name="licensing.tests.LicensingTest">
+        <test-method status="PASS" signature="putLicense(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:licensing.tests.LicensingTest@143640d5]" name="putLicense" duration-ms="263" started-at="2016-08-24T12:38:32Z" description="putLicense" finished-at="2016-08-24T12:38:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[appliance]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[unlimited]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/api/v1/system/licenses/]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putLicense -->
+      </class> <!-- licensing.tests.LicensingTest -->
+    </test> <!-- Verify Install of Appliance License -->
+    <test name="Revert System Manger log level to INFO mode" duration-ms="1406" started-at="2016-08-24T19:38:33Z" finished-at="2016-08-24T19:38:34Z">
+      <class name="com.emc.itests.logmgr.tests.LogSourceTest">
+        <test-method status="PASS" signature="updateLogSourceByName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogSourceTest@3a079870]" name="updateLogSourceByName" duration-ms="1405" started-at="2016-08-24T12:38:33Z" finished-at="2016-08-24T12:38:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logSources/{logSourceId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[System Manager]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[INFO]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLogSourceByName -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogSourceTest -->
+    </test> <!-- Revert System Manger log level to INFO mode -->
+    <test name="Revert Configuration Manager log level to INFO moder" duration-ms="1440" started-at="2016-08-24T19:38:34Z" finished-at="2016-08-24T19:38:35Z">
+      <class name="com.emc.itests.logmgr.tests.LogSourceTest">
+        <test-method status="PASS" signature="updateLogSourceByName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogSourceTest@3c153a1]" name="updateLogSourceByName" duration-ms="1438" started-at="2016-08-24T12:38:34Z" finished-at="2016-08-24T12:38:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logSources/{logSourceId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Configuration Manager]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[INFO]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLogSourceByName -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogSourceTest -->
+    </test> <!-- Revert Configuration Manager log level to INFO moder -->
+    <test name="Revert AAA log level to INFO mode" duration-ms="1429" started-at="2016-08-24T19:38:35Z" finished-at="2016-08-24T19:38:37Z">
+      <class name="com.emc.itests.logmgr.tests.LogSourceTest">
+        <test-method status="PASS" signature="updateLogSourceByName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogSourceTest@5db45159]" name="updateLogSourceByName" duration-ms="1428" started-at="2016-08-24T12:38:35Z" finished-at="2016-08-24T12:38:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logSources/{logSourceId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Authentication]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[INFO]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLogSourceByName -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogSourceTest -->
+    </test> <!-- Revert AAA log level to INFO mode -->
+    <test name="Revert Discovery log level to INFO mode" duration-ms="1346" started-at="2016-08-24T19:38:37Z" finished-at="2016-08-24T19:38:38Z">
+      <class name="com.emc.itests.logmgr.tests.LogSourceTest">
+        <test-method status="PASS" signature="updateLogSourceByName(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:com.emc.itests.logmgr.tests.LogSourceTest@45dd4eda]" name="updateLogSourceByName" duration-ms="1344" started-at="2016-08-24T12:38:37Z" finished-at="2016-08-24T12:38:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logSources/{logSourceId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Discovery]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[INFO]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[202]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLogSourceByName -->
+      </class> <!-- com.emc.itests.logmgr.tests.LogSourceTest -->
+    </test> <!-- Revert Discovery log level to INFO mode -->
+    <test name="LogOut" duration-ms="30" started-at="2016-08-24T19:38:38Z" finished-at="2016-08-24T19:38:38Z">
+      <class name="core.tests.BaseTest">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, org.testng.ITestContext)[pri:0, instance:core.tests.BaseTest@1a0dcaa]" name="init" is-config="true" duration-ms="844" started-at="2016-08-24T12:33:37Z" finished-at="2016-08-24T12:33:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8443]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[org.testng.TestRunner@47e51549]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="logout(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:core.tests.BaseTest@1a0dcaa]" name="logout" duration-ms="29" started-at="2016-08-24T12:38:38Z" finished-at="2016-08-24T12:38:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logout]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- core.tests.BaseTest -->
+    </test> <!-- LogOut -->
+  </suite> <!-- SmokeTest -->
+</testng-results>

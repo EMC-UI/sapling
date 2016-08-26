@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="20" passed="20">
+  <reporter-output>
+  </reporter-output>
+  <suite name="OVA Acceptance Test" duration-ms="20343" started-at="2016-08-24T19:39:12Z" finished-at="2016-08-24T19:39:32Z">
+    <groups>
+    </groups>
+    <test name="Service test - Dashboard status" duration-ms="1037" started-at="2016-08-24T19:39:12Z" finished-at="2016-08-24T19:39:13Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@26be92ad]" name="testSkylineServices" duration-ms="1025" started-at="2016-08-24T12:39:12Z" finished-at="2016-08-24T12:39:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/dashboard status ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Dashboard status -->
+    <test name="Service test - HDS status" duration-ms="1014" started-at="2016-08-24T19:39:13Z" finished-at="2016-08-24T19:39:14Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@66a3ffec]" name="testSkylineServices" duration-ms="1012" started-at="2016-08-24T12:39:13Z" finished-at="2016-08-24T12:39:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/hds status ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - HDS status -->
+    <test name="Service test - Elastic search" duration-ms="1015" started-at="2016-08-24T19:39:14Z" finished-at="2016-08-24T19:39:15Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@5e3a8624]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:14Z" finished-at="2016-08-24T12:39:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/sbin/service elasticsearch status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[elasticsearch is running]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Elastic search -->
+    <test name="Service test - Task manager" duration-ms="1014" started-at="2016-08-24T19:39:15Z" finished-at="2016-08-24T19:39:16Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@6a41eaa2]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:15Z" finished-at="2016-08-24T12:39:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/taskmgr status ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Task manager -->
+    <test name="Service test - Storage manager" duration-ms="1015" started-at="2016-08-24T19:39:16Z" finished-at="2016-08-24T19:39:17Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@7d9d1a19]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:16Z" finished-at="2016-08-24T12:39:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/storagemgr status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Storage manager -->
+    <test name="Service test - Catalog" duration-ms="1015" started-at="2016-08-24T19:39:17Z" finished-at="2016-08-24T19:39:18Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@53b32d7]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:17Z" finished-at="2016-08-24T12:39:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/catalog status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Catalog -->
+    <test name="Service test - Skyline-ui" duration-ms="1014" started-at="2016-08-24T19:39:18Z" finished-at="2016-08-24T19:39:19Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@204f30ec]" name="testSkylineServices" duration-ms="1012" started-at="2016-08-24T12:39:18Z" finished-at="2016-08-24T12:39:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/sbin/service ui status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[skyline-ui is running.]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Skyline-ui -->
+    <test name="Service test - Schdeuler" duration-ms="1013" started-at="2016-08-24T19:39:19Z" finished-at="2016-08-24T19:39:20Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@464bee09]" name="testSkylineServices" duration-ms="1012" started-at="2016-08-24T12:39:19Z" finished-at="2016-08-24T12:39:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/scheduler status ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Schdeuler -->
+    <test name="Service test - Media manager" duration-ms="1013" started-at="2016-08-24T19:39:20Z" finished-at="2016-08-24T19:39:21Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@31ef45e3]" name="testSkylineServices" duration-ms="1012" started-at="2016-08-24T12:39:20Z" finished-at="2016-08-24T12:39:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/mediamgr status ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Media manager -->
+    <test name="Service test - Workflow" duration-ms="1015" started-at="2016-08-24T19:39:21Z" finished-at="2016-08-24T19:39:22Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@4f7d0008]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:21Z" finished-at="2016-08-24T12:39:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/workflow status ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Workflow -->
+    <test name="Service test - Telemetry Manager" duration-ms="1013" started-at="2016-08-24T19:39:22Z" finished-at="2016-08-24T19:39:23Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@59ec2012]" name="testSkylineServices" duration-ms="1012" started-at="2016-08-24T12:39:22Z" finished-at="2016-08-24T12:39:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/telmgr status ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Telemetry Manager -->
+    <test name="Service test - Restserver" duration-ms="1014" started-at="2016-08-24T19:39:23Z" finished-at="2016-08-24T19:39:24Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@1ce92674]" name="testSkylineServices" duration-ms="1012" started-at="2016-08-24T12:39:23Z" finished-at="2016-08-24T12:39:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/restserver status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Restserver -->
+    <test name="Service test - Sla Dynamic Protection" duration-ms="1015" started-at="2016-08-24T19:39:24Z" finished-at="2016-08-24T19:39:25Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@31a5c39e]" name="testSkylineServices" duration-ms="1014" started-at="2016-08-24T12:39:24Z" finished-at="2016-08-24T12:39:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/dynamic-protection-service status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Sla Dynamic Protection -->
+    <test name="Service test - Log Manager" duration-ms="1014" started-at="2016-08-24T19:39:25Z" finished-at="2016-08-24T19:39:26Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@72d818d1]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:25Z" finished-at="2016-08-24T12:39:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/logmgr status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[logmgr is running]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Log Manager -->
+    <test name="Service test - Event" duration-ms="1014" started-at="2016-08-24T19:39:26Z" finished-at="2016-08-24T19:39:27Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@13805618]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:26Z" finished-at="2016-08-24T12:39:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/eventservice status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[EventService is running]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Event -->
+    <test name="Service test - ConfigManager" duration-ms="1015" started-at="2016-08-24T19:39:27Z" finished-at="2016-08-24T19:39:28Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@69ea3742]" name="testSkylineServices" duration-ms="1014" started-at="2016-08-24T12:39:27Z" finished-at="2016-08-24T12:39:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/configmgr status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[configmgr is running]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - ConfigManager -->
+    <test name="Service test - Discovery" duration-ms="1014" started-at="2016-08-24T19:39:28Z" finished-at="2016-08-24T19:39:29Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@5649fd9b]" name="testSkylineServices" duration-ms="1012" started-at="2016-08-24T12:39:28Z" finished-at="2016-08-24T12:39:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/discovery-service status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Discovery -->
+    <test name="Service test - SysMgr" duration-ms="1014" started-at="2016-08-24T19:39:29Z" finished-at="2016-08-24T19:39:30Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@192b07fd]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:29Z" finished-at="2016-08-24T12:39:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/lib/sysmgr/bin/sysmgr  status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - SysMgr -->
+    <test name="Service test - Rabbitmq service" duration-ms="1014" started-at="2016-08-24T19:39:30Z" finished-at="2016-08-24T19:39:31Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@10bdf5e5]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:30Z" finished-at="2016-08-24T12:39:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/sbin/service rabbitmq-server status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Rabbitmq service -->
+    <test name="Service test - Authorization" duration-ms="1014" started-at="2016-08-24T19:39:31Z" finished-at="2016-08-24T19:39:32Z">
+      <class name="ovaAcceptance.tests.ovaAcceptanceTest">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String, java.lang.String, boolean, java.lang.String, org.testng.ITestContext)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@2038ae61]" name="init" is-config="true" duration-ms="641" started-at="2016-08-24T12:39:11Z" finished-at="2016-08-24T12:39:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Changeme@1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[C:\TEE\titan-main\titan-logs]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[org.testng.TestRunner@29626d54]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@2038ae61]" name="testSkylineServices" duration-ms="1012" started-at="2016-08-24T12:39:31Z" finished-at="2016-08-24T12:39:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/usr/local/brs/bin/aaa status]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSkylineServices -->
+        <test-method status="PASS" signature="closeConnection()[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@2038ae61]" name="closeConnection" is-config="true" duration-ms="7" started-at="2016-08-24T12:39:32Z" finished-at="2016-08-24T12:39:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeConnection -->
+      </class> <!-- ovaAcceptance.tests.ovaAcceptanceTest -->
+    </test> <!-- Service test - Authorization -->
+  </suite> <!-- OVA Acceptance Test -->
+</testng-results>

@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="22" passed="22">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SysmgrAcceptance_testNG" duration-ms="6810" started-at="2016-08-24T19:38:40Z" finished-at="2016-08-24T19:38:47Z">
+    <groups>
+    </groups>
+    <test name="LogIn to configured Skyline system in OPERATIONAL state" duration-ms="3359" started-at="2016-08-24T19:38:40Z" finished-at="2016-08-24T19:38:44Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@77be656f]" name="login" duration-ms="2246" started-at="2016-08-24T12:38:40Z" finished-at="2016-08-24T12:38:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="getConfigStatus(java.lang.String, java.lang.String, int, boolean, int, int, java.lang.String, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@77be656f]" name="getConfigStatus" duration-ms="984" started-at="2016-08-24T12:38:43Z" finished-at="2016-08-24T12:38:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}/configurations/{configurationId}/configStatus]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[SUCCESS]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getConfigStatus -->
+        <test-method status="PASS" signature="putNode(java.lang.String, java.lang.String, int, boolean, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@77be656f]" name="putNode" duration-ms="99" started-at="2016-08-24T12:38:44Z" finished-at="2016-08-24T12:38:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[OPERATIONAL_RUNNING]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[OPERATIONAL]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[OPERATIONAL_RUNNING]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[120]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putNode -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- LogIn to configured Skyline system in OPERATIONAL state -->
+    <test name="SYSE 14850 - GET Eulas -  returns list of eulas" duration-ms="122" started-at="2016-08-24T19:38:44Z" finished-at="2016-08-24T19:38:44Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getEulas(java.lang.String, java.lang.String, int, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@3f200884]" name="getEulas" duration-ms="121" started-at="2016-08-24T12:38:44Z" finished-at="2016-08-24T12:38:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}/eulas]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEulas -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- SYSE 14850 - GET Eulas -  returns list of eulas -->
+    <test name="SYSE 5308 -GET Eula - Verify by id has all the required fields in response" duration-ms="157" started-at="2016-08-24T19:38:44Z" finished-at="2016-08-24T19:38:44Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getEulaById(java.lang.String, java.lang.String, int, boolean, boolean, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@429bd883]" name="getEulaById" duration-ms="155" started-at="2016-08-24T12:38:44Z" finished-at="2016-08-24T12:38:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}/eulas/{eulaId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[SOFTWARE LICENSE AND MAINTENANCE AGREEMENT]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getEulaById -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- SYSE 5308 -GET Eula - Verify by id has all the required fields in response -->
+    <test name="SYSR 5499 - Verify LINKS on GET EULA response" duration-ms="96" started-at="2016-08-24T19:38:44Z" finished-at="2016-08-24T19:38:44Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="verifyLastResponseLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@351d0846]" name="verifyLastResponseLink" duration-ms="95" started-at="2016-08-24T12:38:44Z" finished-at="2016-08-24T12:38:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[parent]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/system/nodes/.{36}$]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLastResponseLink -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- SYSR 5499 - Verify LINKS on GET EULA response -->
+    <test name="GET osUsers and verify all the required users are returned" duration-ms="243" started-at="2016-08-24T19:38:44Z" finished-at="2016-08-24T19:38:44Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getOsUsers(java.lang.String, java.lang.String, int, boolean, boolean, java.lang.String, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@255b53dc]" name="getOsUsers" duration-ms="241" started-at="2016-08-24T12:38:44Z" finished-at="2016-08-24T12:38:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}/osUsers]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[admin,root,support]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOsUsers -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- GET osUsers and verify all the required users are returned -->
+    <test name="ROOT-GET osUsers - Verify response schema for" duration-ms="253" started-at="2016-08-24T19:38:44Z" finished-at="2016-08-24T19:38:45Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getOsUserById(java.lang.String, java.lang.String, int, boolean, java.lang.String, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@3b2c72c2]" name="getOsUserById" duration-ms="152" started-at="2016-08-24T12:38:44Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}/osUsers/{osUserId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[root]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[eCDM root account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOsUserById -->
+        <test-method status="PASS" signature="verifyLastResponseLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@3b2c72c2]" name="verifyLastResponseLink" duration-ms="98" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[self]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/system/nodes/.{36}/osUsers/.{36}$]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLastResponseLink -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- ROOT-GET osUsers - Verify response schema for -->
+    <test name="ROOT-GET osUsers - Verify links and extended messages" duration-ms="65" started-at="2016-08-24T19:38:45Z" finished-at="2016-08-24T19:38:45Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="verifyLastResponseLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@564718df]" name="verifyLastResponseLink" duration-ms="63" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Configuration]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/system/nodes/.{36}/configurations/.{36}$]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLastResponseLink -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- ROOT-GET osUsers - Verify links and extended messages -->
+    <test name="ADMIN-GET osUsers - Verify response schema for" duration-ms="266" started-at="2016-08-24T19:38:45Z" finished-at="2016-08-24T19:38:45Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getOsUserById(java.lang.String, java.lang.String, int, boolean, java.lang.String, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@4206a205]" name="getOsUserById" duration-ms="152" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}/osUsers/{osUserId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[eCDM administrator account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOsUserById -->
+        <test-method status="PASS" signature="verifyLastResponseLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@4206a205]" name="verifyLastResponseLink" duration-ms="112" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[self]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/system/nodes/.{36}/osUsers/.{36}$]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLastResponseLink -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- ADMIN-GET osUsers - Verify response schema for -->
+    <test name="ADMIN-GET osUsers - Verify links and extended messages" duration-ms="67" started-at="2016-08-24T19:38:45Z" finished-at="2016-08-24T19:38:45Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="verifyLastResponseLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@1a052a00]" name="verifyLastResponseLink" duration-ms="65" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Configuration]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/system/nodes/.{36}/configurations/.{36}$]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLastResponseLink -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- ADMIN-GET osUsers - Verify links and extended messages -->
+    <test name="SUPPORT-GET osUsers - Verify response schema for" duration-ms="239" started-at="2016-08-24T19:38:45Z" finished-at="2016-08-24T19:38:45Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getOsUserById(java.lang.String, java.lang.String, int, boolean, java.lang.String, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@7f77e91b]" name="getOsUserById" duration-ms="143" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}/osUsers/{osUserId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[support]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[EMC support account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getOsUserById -->
+        <test-method status="PASS" signature="verifyLastResponseLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@7f77e91b]" name="verifyLastResponseLink" duration-ms="93" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[self]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/system/nodes/.{36}/osUsers/.{36}$]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLastResponseLink -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- SUPPORT-GET osUsers - Verify response schema for -->
+    <test name="SUPPORT-GET osUsers - Verify links and extended messages" duration-ms="65" started-at="2016-08-24T19:38:45Z" finished-at="2016-08-24T19:38:45Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="verifyLastResponseLink(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@15bb6bea]" name="verifyLastResponseLink" duration-ms="64" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Configuration]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[/system/nodes/.{36}/configurations/.{36}$]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLastResponseLink -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- SUPPORT-GET osUsers - Verify links and extended messages -->
+    <test name="GET lockboxes should return all the boxes on the node" duration-ms="53" started-at="2016-08-24T19:38:45Z" finished-at="2016-08-24T19:38:45Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getLockboxes(java.lang.String, java.lang.String, int, boolean, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@1e67a849]" name="getLockboxes" duration-ms="51" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/lockboxes]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Lockbox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLockboxes -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- GET lockboxes should return all the boxes on the node -->
+    <test name="GET lockboxes - Verify response code and body" duration-ms="92" started-at="2016-08-24T19:38:45Z" finished-at="2016-08-24T19:38:46Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getLockboxById(java.lang.String, java.lang.String, int, boolean, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@55040f2f]" name="getLockboxById" duration-ms="90" started-at="2016-08-24T12:38:45Z" finished-at="2016-08-24T12:38:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/lockboxes/{lockboxId}]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Lockbox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getLockboxById -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- GET lockboxes - Verify response code and body -->
+    <test name="GET disks-verify valid response" duration-ms="526" started-at="2016-08-24T19:38:46Z" finished-at="2016-08-24T19:38:46Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getDisks(java.lang.String, java.lang.String, int, boolean, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@52aa2946]" name="getDisks" duration-ms="525" started-at="2016-08-24T12:38:46Z" finished-at="2016-08-24T12:38:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}/disks]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[sda,sdb]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDisks -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- GET disks-verify valid response -->
+    <test name="GET components-verify valid response" duration-ms="922" started-at="2016-08-24T19:38:46Z" finished-at="2016-08-24T19:38:47Z">
+      <class name="sysmgr.tests.TestNgAutomation">
+        <test-method status="PASS" signature="getComponents(java.lang.String, java.lang.String, int, boolean, boolean, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@4ae3c1cd]" name="getComponents" duration-ms="771" started-at="2016-08-24T12:38:46Z" finished-at="2016-08-24T12:38:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/system/nodes/{nodeId}/components]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[EventService,hds,StorageManagerService,Postgres,dashboard,LicenseMgr,discoveryservice,SysMgr,ConfigManager,Zookeeper,RestServer,workflow,TaskManager,LogManager,AAA Component Service,Catalog,Tomcat,Scheduler,MessageBus,Elasticsearch,media-manager,telmgr,UI,dynamicprotectionservice,SecretsMgr,LockBoxDmc,ServerDisasterRecovery,Nginx,Mongodb]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getComponents -->
+        <test-method status="PASS" signature="verifyLastResponseLinksJson(java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@4ae3c1cd]" name="verifyLastResponseLinksJson" duration-ms="146" started-at="2016-08-24T12:38:47Z" finished-at="2016-08-24T12:38:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[{"links":[{"href":"/system/nodes/.{36}","rel":"parent"},{"href":"/system/nodes/.{36}/components/.{36}","rel":"self"}]}]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLastResponseLinksJson -->
+      </class> <!-- sysmgr.tests.TestNgAutomation -->
+    </test> <!-- GET components-verify valid response -->
+    <test name="LogOut" duration-ms="252" started-at="2016-08-24T19:38:47Z" finished-at="2016-08-24T19:38:47Z">
+      <class name="core.tests.BaseTest">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, org.testng.ITestContext)[pri:0, instance:core.tests.BaseTest@4c6e276e]" name="init" is-config="true" duration-ms="650" started-at="2016-08-24T12:38:40Z" finished-at="2016-08-24T12:38:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8443]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b97c4ad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="logout(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:core.tests.BaseTest@4c6e276e]" name="logout" duration-ms="250" started-at="2016-08-24T12:38:47Z" finished-at="2016-08-24T12:38:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/logout]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- core.tests.BaseTest -->
+    </test> <!-- LogOut -->
+  </suite> <!-- SysmgrAcceptance_testNG -->
+</testng-results>

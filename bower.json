@@ -1,0 +1,23 @@
+{
+  "name": "mean",
+  "dependencies": {
+    "jquery": "latest",
+    "angular": "latest",
+    "angular-resource": "latest",
+    "angular-cookies": "latest",
+    "angular-mocks": "latest",
+    "angular-route": "latest",
+    "bootstrap": "latest",
+    "angular-bootstrap": "latest",
+    "angular-ui-router": "latest",
+    "web-bootstrap": "./node_modules/meanio/resources/web-bootstrap.js",
+    "angular-ui-select": "latest",
+    "angular-sanitize": "latest",
+    "Sortable": "^1.4.2"
+  },
+  "resolutions": {
+    "angular": "1.5.8",
+    "angular-bootstrap": "2.1.2",
+    "bootstrap": "3.3.7"
+  }
+}

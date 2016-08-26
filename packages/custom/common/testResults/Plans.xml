@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Plans Test" duration-ms="226055" started-at="2016-08-24T19:46:02Z" finished-at="2016-08-24T19:49:48Z">
+    <groups>
+    </groups>
+    <test name="PLAN8042 - Create planDef with objective Data Consistency" duration-ms="44799" started-at="2016-08-24T19:46:02Z" finished-at="2016-08-24T19:46:47Z">
+      <class name="uxcore.tests.PlansTest">
+        <test-method status="PASS" signature="createPlanWithObjective(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:uxcore.tests.PlansTest@c038203]" name="createPlanWithObjective" duration-ms="44766" started-at="2016-08-24T12:46:02Z" finished-at="2016-08-24T12:46:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tests\plans\conf.js]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestNg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestNg desc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[stage1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Data Consistency]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlanWithObjective -->
+      </class> <!-- uxcore.tests.PlansTest -->
+    </test> <!-- PLAN8042 - Create planDef with objective Data Consistency -->
+    <test name="PLAN8043 - Create planDef with objective Recovery Point" duration-ms="44933" started-at="2016-08-24T19:46:47Z" finished-at="2016-08-24T19:47:32Z">
+      <class name="uxcore.tests.PlansTest">
+        <test-method status="PASS" signature="createPlanWithObjective(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:uxcore.tests.PlansTest@5e5792a0]" name="createPlanWithObjective" duration-ms="44926" started-at="2016-08-24T12:46:47Z" finished-at="2016-08-24T12:47:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tests\plans\conf.js]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestNg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestNg desc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[stage1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Recovery Point]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlanWithObjective -->
+      </class> <!-- uxcore.tests.PlansTest -->
+    </test> <!-- PLAN8043 - Create planDef with objective Recovery Point -->
+    <test name="PLAN8045 - Create planDef with objective Maximun Copies" duration-ms="45015" started-at="2016-08-24T19:47:32Z" finished-at="2016-08-24T19:48:17Z">
+      <class name="uxcore.tests.PlansTest">
+        <test-method status="PASS" signature="createPlanWithObjective(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:uxcore.tests.PlansTest@27efef64]" name="createPlanWithObjective" duration-ms="45012" started-at="2016-08-24T12:47:32Z" finished-at="2016-08-24T12:48:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tests\plans\conf.js]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestNg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestNg desc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[stage1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Maximum Copies]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlanWithObjective -->
+      </class> <!-- uxcore.tests.PlansTest -->
+    </test> <!-- PLAN8045 - Create planDef with objective Maximun Copies -->
+    <test name="PLAN8049 - Create planDef with objective Storage Class" duration-ms="44480" started-at="2016-08-24T19:48:17Z" finished-at="2016-08-24T19:49:01Z">
+      <class name="uxcore.tests.PlansTest">
+        <test-method status="PASS" signature="createPlanWithObjective(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:uxcore.tests.PlansTest@1e88b3c]" name="createPlanWithObjective" duration-ms="44476" started-at="2016-08-24T12:48:17Z" finished-at="2016-08-24T12:49:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tests\plans\conf.js]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestNg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestNg desc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[stage1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Storage Class]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlanWithObjective -->
+      </class> <!-- uxcore.tests.PlansTest -->
+    </test> <!-- PLAN8049 - Create planDef with objective Storage Class -->
+    <test name="PLAN8050 - Create planDef with objective Retention" duration-ms="46532" started-at="2016-08-24T19:49:01Z" finished-at="2016-08-24T19:49:48Z">
+      <class name="uxcore.tests.PlansTest">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext, boolean, java.lang.String)[pri:0, instance:uxcore.tests.PlansTest@91161c7]" name="init" is-config="true" duration-ms="180" started-at="2016-08-24T12:46:02Z" finished-at="2016-08-24T12:46:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9000]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[C:\releng\workspace\skyline-itests-webux\target\checkout\webux\target/testng/webux/protractor/node_modules/protractor/bin/protractor]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[C:\releng\workspace\skyline-itests-webux\target\checkout\webux\target/testng/webux/protractor/]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[org.testng.TestRunner@3224f60b]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="createPlanWithObjective(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:uxcore.tests.PlansTest@91161c7]" name="createPlanWithObjective" duration-ms="46527" started-at="2016-08-24T12:49:01Z" finished-at="2016-08-24T12:49:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tests\plans\conf.js]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[TestNg]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[TestNg desc]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[stage1]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Retention]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPlanWithObjective -->
+      </class> <!-- uxcore.tests.PlansTest -->
+    </test> <!-- PLAN8050 - Create planDef with objective Retention -->
+  </suite> <!-- Plans Test -->
+</testng-results>

@@ -1,0 +1,9 @@
+<div ng-controller="DucDashboardController">
+  <p>Total # Bugs: {{totalBugs}}</p>
+  <canvas id="base" class="chart-horizontal-bar"
+          chart-data="bugsSummary"
+          chart-labels="labels",
+          continuous-edit-mode="true",
+          chart-click="dashboardClick">
+  </canvas>
+</div>

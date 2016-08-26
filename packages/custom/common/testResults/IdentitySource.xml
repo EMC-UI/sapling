@@ -1,0 +1,2104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="8" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="IdentitySource and User Group CRUD Suite" duration-ms="10003" started-at="2016-08-24T19:38:49Z" finished-at="2016-08-24T19:38:59Z">
+    <groups>
+    </groups>
+    <test name="LogIn" duration-ms="2027" started-at="2016-08-24T19:38:49Z" finished-at="2016-08-24T19:38:51Z">
+      <class name="core.tests.BaseTest">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:core.tests.BaseTest@29774679]" name="login" duration-ms="2005" started-at="2016-08-24T12:38:49Z" finished-at="2016-08-24T12:38:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[/api/v1/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- core.tests.BaseTest -->
+    </test> <!-- LogIn -->
+    <test name="Update identity source" duration-ms="1241" started-at="2016-08-24T19:38:51Z" finished-at="2016-08-24T19:38:53Z">
+      <class name="aaa.tests.UserGroupsCRUDTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:aaa.tests.UserGroupsCRUDTest@343f4d3d]" name="setUp" is-config="true" duration-ms="216" started-at="2016-08-24T12:38:51Z" finished-at="2016-08-24T12:38:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initalizeTestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@343f4d3d]" name="initalizeTestUser" is-config="true" duration-ms="1" started-at="2016-08-24T12:38:52Z" finished-at="2016-08-24T12:38:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chris]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tom.Chris@aol.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tom83]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Changeme@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initalizeTestUser -->
+        <test-method status="PASS" signature="postIdentitySources(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@343f4d3d]" name="postIdentitySources" is-config="true" duration-ms="649" started-at="2016-08-24T12:38:52Z" finished-at="2016-08-24T12:38:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ldap://vm-vcloud-0553.asl.lab.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[cn=Manager,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[cn=adam,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[account]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[posixGroup]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ldap://10.25.13.44]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[dc=new,dc=exchdns,dc=com]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Administrator@new.exchdns.com]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Changeme@123]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[memberUid]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postIdentitySources -->
+        <test-method status="PASS" signature="updateIdentitySourceWithNewUser(java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@343f4d3d]" name="updateIdentitySourceWithNewUser" duration-ms="262" started-at="2016-08-24T12:38:52Z" finished-at="2016-08-24T12:38:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ldapServerAddress]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[cn=adam,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[org.testng.TestRunner@64b70919]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateIdentitySourceWithNewUser -->
+        <test-method status="PASS" signature="cleanUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@343f4d3d]" name="cleanUp" is-config="true" duration-ms="111" started-at="2016-08-24T12:38:52Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- aaa.tests.UserGroupsCRUDTest -->
+    </test> <!-- Update identity source -->
+    <test name="Get identity source" duration-ms="309" started-at="2016-08-24T19:38:53Z" finished-at="2016-08-24T19:38:53Z">
+      <class name="aaa.tests.UserGroupsCRUDTest">
+        <test-method status="PASS" signature="initalizeTestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@77cd7a0]" name="initalizeTestUser" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chris]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tom.Chris@aol.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tom83]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Changeme@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initalizeTestUser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:aaa.tests.UserGroupsCRUDTest@77cd7a0]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postIdentitySources(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@77cd7a0]" name="postIdentitySources" is-config="true" duration-ms="167" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ldap://vm-vcloud-0553.asl.lab.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[cn=Manager,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[cn=adam,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[account]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[posixGroup]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ldap://10.25.13.44]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[dc=new,dc=exchdns,dc=com]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Administrator@new.exchdns.com]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Changeme@123]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[memberUid]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postIdentitySources -->
+        <test-method status="PASS" signature="retrieveIdentitySource(java.lang.String, org.testng.ITestContext)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@77cd7a0]" name="retrieveIdentitySource" duration-ms="74" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ldapServerAddress]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@29629fbb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrieveIdentitySource -->
+        <test-method status="PASS" signature="cleanUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@77cd7a0]" name="cleanUp" is-config="true" duration-ms="65" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- aaa.tests.UserGroupsCRUDTest -->
+    </test> <!-- Get identity source -->
+    <test name="Delete identity source" duration-ms="277" started-at="2016-08-24T19:38:53Z" finished-at="2016-08-24T19:38:53Z">
+      <class name="aaa.tests.UserGroupsCRUDTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:aaa.tests.UserGroupsCRUDTest@6eebc39e]" name="setUp" is-config="true" duration-ms="1" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postIdentitySources(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@6eebc39e]" name="postIdentitySources" is-config="true" duration-ms="139" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ldap://vm-vcloud-0553.asl.lab.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[cn=Manager,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[cn=adam,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[account]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[posixGroup]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ldap://10.25.13.44]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[dc=new,dc=exchdns,dc=com]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Administrator@new.exchdns.com]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Changeme@123]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[memberUid]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postIdentitySources -->
+        <test-method status="PASS" signature="initalizeTestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@6eebc39e]" name="initalizeTestUser" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chris]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tom.Chris@aol.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tom83]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Changeme@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initalizeTestUser -->
+        <test-method status="PASS" signature="deleteIdentitySourceTest(java.lang.String, org.testng.ITestContext)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@6eebc39e]" name="deleteIdentitySourceTest" duration-ms="137" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ldapServerAddress]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@26a262d6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteIdentitySourceTest -->
+        <test-method status="PASS" signature="cleanUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@6eebc39e]" name="cleanUp" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- aaa.tests.UserGroupsCRUDTest -->
+    </test> <!-- Delete identity source -->
+    <test name="POST on userGroups with one identitysource in identitySourceGroup and role sys admin and login to skyline using the user under the group AD" duration-ms="2193" started-at="2016-08-24T19:38:53Z" finished-at="2016-08-24T19:38:55Z">
+      <class name="aaa.tests.UserGroupsCRUDTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:aaa.tests.UserGroupsCRUDTest@57fffcd7]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postIdentitySources(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@57fffcd7]" name="postIdentitySources" is-config="true" duration-ms="151" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ldap://vm-vcloud-0553.asl.lab.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[cn=Manager,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[cn=adam,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[account]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[posixGroup]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ldap://10.25.13.44]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[dc=new,dc=exchdns,dc=com]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Administrator@new.exchdns.com]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Changeme@123]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[memberUid]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postIdentitySources -->
+        <test-method status="PASS" signature="initalizeTestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@57fffcd7]" name="initalizeTestUser" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chris]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tom.Chris@aol.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tom83]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Changeme@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initalizeTestUser -->
+        <test-method status="PASS" signature="createUserGroupUnderSystemTenantUserRoleAssignedToGroup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@57fffcd7]" name="createUserGroupUnderSystemTenantUserRoleAssignedToGroup" duration-ms="1811" started-at="2016-08-24T12:38:53Z" finished-at="2016-08-24T12:38:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testUserGroup]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test automation user group]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[adServerAddress]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[identitySourceUserGroups4]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[System Tenant Admin]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[ldap_UserName4]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ldap_UserPassword4]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[org.testng.TestRunner@6ecab872]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUserGroupUnderSystemTenantUserRoleAssignedToGroup -->
+        <test-method status="PASS" signature="cleanUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@57fffcd7]" name="cleanUp" is-config="true" duration-ms="230" started-at="2016-08-24T12:38:55Z" finished-at="2016-08-24T12:38:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- aaa.tests.UserGroupsCRUDTest -->
+    </test> <!-- POST on userGroups with one identitysource in identitySourceGroup and role sys admin and login to skyline using the user under the group AD -->
+    <test name="Update userGroup description" duration-ms="1351" started-at="2016-08-24T19:38:55Z" finished-at="2016-08-24T19:38:57Z">
+      <class name="aaa.tests.UserGroupsCRUDTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:aaa.tests.UserGroupsCRUDTest@553f17c]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:55Z" finished-at="2016-08-24T12:38:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="initalizeTestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@553f17c]" name="initalizeTestUser" is-config="true" duration-ms="1" started-at="2016-08-24T12:38:55Z" finished-at="2016-08-24T12:38:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chris]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tom.Chris@aol.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tom83]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Changeme@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initalizeTestUser -->
+        <test-method status="PASS" signature="postIdentitySources(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@553f17c]" name="postIdentitySources" is-config="true" duration-ms="124" started-at="2016-08-24T12:38:55Z" finished-at="2016-08-24T12:38:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ldap://vm-vcloud-0553.asl.lab.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[cn=Manager,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[cn=adam,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[account]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[posixGroup]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ldap://10.25.13.44]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[dc=new,dc=exchdns,dc=com]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Administrator@new.exchdns.com]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Changeme@123]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[memberUid]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postIdentitySources -->
+        <test-method status="PASS" signature="updateUserGroup(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@553f17c]" name="updateUserGroup" duration-ms="1077" started-at="2016-08-24T12:38:55Z" finished-at="2016-08-24T12:38:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testUserGroup]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test automation user group]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[adServerAddress]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[identitySourceUserGroups8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[System Tenant Admin]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[ldap_UserName8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ldap_UserPassword8]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Updateddescription]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[Updatedname]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[org.testng.TestRunner@3901f6af]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserGroup -->
+        <test-method status="PASS" signature="cleanUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@553f17c]" name="cleanUp" is-config="true" duration-ms="147" started-at="2016-08-24T12:38:57Z" finished-at="2016-08-24T12:38:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- aaa.tests.UserGroupsCRUDTest -->
+    </test> <!-- Update userGroup description -->
+    <test name="GET ALL user Groups and verify" duration-ms="1321" started-at="2016-08-24T19:38:57Z" finished-at="2016-08-24T19:38:58Z">
+      <class name="aaa.tests.UserGroupsCRUDTest">
+        <test-method status="PASS" signature="initalizeTestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@402a079c]" name="initalizeTestUser" is-config="true" duration-ms="1" started-at="2016-08-24T12:38:57Z" finished-at="2016-08-24T12:38:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chris]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tom.Chris@aol.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tom83]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Changeme@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initalizeTestUser -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:aaa.tests.UserGroupsCRUDTest@402a079c]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:57Z" finished-at="2016-08-24T12:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postIdentitySources(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@402a079c]" name="postIdentitySources" is-config="true" duration-ms="125" started-at="2016-08-24T12:38:57Z" finished-at="2016-08-24T12:38:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ldap://vm-vcloud-0553.asl.lab.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[cn=Manager,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[cn=adam,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[account]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[posixGroup]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ldap://10.25.13.44]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[dc=new,dc=exchdns,dc=com]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Administrator@new.exchdns.com]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Changeme@123]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[memberUid]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postIdentitySources -->
+        <test-method status="PASS" signature="retrieveAllUserGroups(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@402a079c]" name="retrieveAllUserGroups" duration-ms="1004" started-at="2016-08-24T12:38:57Z" finished-at="2016-08-24T12:38:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testUserGroup]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test automation user group]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[adServerAddress]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[identitySourceUserGroups8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[System Tenant Admin]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[ldap_UserName8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ldap_UserPassword8]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[testUserGroup2]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[test automation user group2]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[identitySourceUserGroups6]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Operations Monitor]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[ldap_UserName6]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[ldap_UserPassword6]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[org.testng.TestRunner@161f6623]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- retrieveAllUserGroups -->
+        <test-method status="PASS" signature="cleanUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@402a079c]" name="cleanUp" is-config="true" duration-ms="191" started-at="2016-08-24T12:38:58Z" finished-at="2016-08-24T12:38:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- aaa.tests.UserGroupsCRUDTest -->
+    </test> <!-- GET ALL user Groups and verify -->
+    <test name="Delete User Group and login with ldap user and make sure he don&#039;t have any priveligies" duration-ms="1264" started-at="2016-08-24T19:38:58Z" finished-at="2016-08-24T19:38:59Z">
+      <class name="aaa.tests.UserGroupsCRUDTest">
+        <test-method status="PASS" signature="init(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean, org.testng.ITestContext)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@7085bdee]" name="init" is-config="true" duration-ms="967" started-at="2016-08-24T12:38:48Z" finished-at="2016-08-24T12:38:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sky30.lss.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[8443]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[org.testng.TestRunner@19650aa6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:aaa.tests.UserGroupsCRUDTest@7085bdee]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:58Z" finished-at="2016-08-24T12:38:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="postIdentitySources(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@7085bdee]" name="postIdentitySources" is-config="true" duration-ms="131" started-at="2016-08-24T12:38:58Z" finished-at="2016-08-24T12:38:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ldap://vm-vcloud-0553.asl.lab.emc.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[LDAP]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[cn=Manager,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[cn=adam,dc=server-world,dc=info]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[account]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[posixGroup]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[ldap://10.25.13.44]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[389]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[dc=new,dc=exchdns,dc=com]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[AD]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[Administrator@new.exchdns.com]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Changeme@123]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="20">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="21">
+              <value>
+                <![CDATA[memberUid]]>
+              </value>
+            </param>
+            <param index="22">
+              <value>
+                <![CDATA[cn]]>
+              </value>
+            </param>
+            <param index="23">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="24">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="25">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="26">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="27">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="28">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="29">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="30">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postIdentitySources -->
+        <test-method status="PASS" signature="initalizeTestUser(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@7085bdee]" name="initalizeTestUser" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:58Z" finished-at="2016-08-24T12:38:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Tom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chris]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Tom.Chris@aol.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tom83]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Changeme@1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initalizeTestUser -->
+        <test-method status="PASS" signature="deleteUserGroupTest(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, org.testng.ITestContext)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@7085bdee]" name="deleteUserGroupTest" duration-ms="1083" started-at="2016-08-24T12:38:58Z" finished-at="2016-08-24T12:38:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testUserGroup]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[test automation user group]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[adServerAddress]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[identitySourceUserGroups8]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[System Tenant Admin]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[ldap_UserName8]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[ldap_UserPassword8]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[org.testng.TestRunner@19650aa6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUserGroupTest -->
+        <test-method status="PASS" signature="cleanUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:aaa.tests.UserGroupsCRUDTest@7085bdee]" name="cleanUp" is-config="true" duration-ms="49" started-at="2016-08-24T12:38:59Z" finished-at="2016-08-24T12:38:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[localhost]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[qaLandlord]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[application/json]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanUp -->
+      </class> <!-- aaa.tests.UserGroupsCRUDTest -->
+    </test> <!-- Delete User Group and login with ldap user and make sure he don't have any priveligies -->
+  </suite> <!-- IdentitySource and User Group CRUD Suite -->
+</testng-results>
