@@ -18,8 +18,7 @@
     "test": "gulp test",
     "test-e2e": "gulp e2e.test",
     "postinstall": "node tools/scripts/postinstall.js",
-    "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "snyk-protect": "snyk protect"
   },
   "dependencies": {
     "angular": "^1.5.5",
