@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="8" passed="8">
+<testng-results skipped="0" failed="1" total="8" passed="7">
   <reporter-output>
   </reporter-output>
   <suite name="configTest_OVA" duration-ms="58307" started-at="2016-08-24T19:32:37Z" finished-at="2016-08-24T19:33:35Z">
@@ -72,7 +72,7 @@
     </test> <!-- LogIn -->
     <test name="Get all time zones" duration-ms="957" started-at="2016-08-24T19:32:40Z" finished-at="2016-08-24T19:32:40Z">
       <class name="sysmgr.tests.TestNgAutomation">
-        <test-method status="PASS" signature="getTimezones(java.lang.String, java.lang.String, int, boolean, boolean, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@59494225]" name="getTimezones" duration-ms="954" started-at="2016-08-24T12:32:40Z" finished-at="2016-08-24T12:32:40Z">
+        <test-method status="FAIL" signature="getTimezones(java.lang.String, java.lang.String, int, boolean, boolean, java.lang.String)[pri:0, instance:sysmgr.tests.TestNgAutomation@59494225]" name="getTimezones" duration-ms="954" started-at="2016-08-24T12:32:40Z" finished-at="2016-08-24T12:32:40Z">
           <params>
             <param index="0">
               <value>
@@ -358,7 +358,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="logout(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:core.tests.BaseTest@3c0f93f1]" name="logout" duration-ms="243" started-at="2016-08-24T12:33:35Z" finished-at="2016-08-24T12:33:35Z">
+        <test-method status="FAIL" signature="logout(java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:core.tests.BaseTest@3c0f93f1]" name="logout" duration-ms="243" started-at="2016-08-24T12:33:35Z" finished-at="2016-08-24T12:33:35Z">
           <params>
             <param index="0">
               <value>

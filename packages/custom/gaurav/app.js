@@ -19,12 +19,12 @@ Gaurav.register(function(app) {
   Gaurav.angularDependencies(['adf', 'adf.structures.base', 'adf.provider', 'chart.js', 'smart-table']);
 
   //We are adding a link to the main menu for all authenticated users
-  Gaurav.menus.add({
+  /*Gaurav.menus.add({
     title: 'Gaurav',
     link: 'gaurav',
     roles: ['authenticated'],
     menu: 'main'
-  });
+  });*/
 
   /**
     //Uncomment to use. Requires meanio@0.3.7 or above

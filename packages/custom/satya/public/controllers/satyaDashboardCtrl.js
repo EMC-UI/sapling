@@ -42,6 +42,7 @@
           }]
         }
       };
+      $scope.colors=["#456F06", "#CD5C5C", "#F7D704"];
       testResults.forEach(function(testResult) {
         $scope.labels.push(testResult.suite.name);
         data.push(parseInt(testResult.passed));

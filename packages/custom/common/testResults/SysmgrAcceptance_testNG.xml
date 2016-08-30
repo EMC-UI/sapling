@@ -7,7 +7,7 @@
     </groups>
     <test name="LogIn to configured Skyline system in OPERATIONAL state" duration-ms="3359" started-at="2016-08-24T19:38:40Z" finished-at="2016-08-24T19:38:44Z">
       <class name="sysmgr.tests.TestNgAutomation">
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@77be656f]" name="login" duration-ms="2246" started-at="2016-08-24T12:38:40Z" finished-at="2016-08-24T12:38:43Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, boolean)[pri:0, instance:sysmgr.tests.TestNgAutomation@77be656f]" name="login" duration-ms="2246" started-at="2016-08-24T12:38:40Z" finished-at="2016-08-24T12:38:43Z">
           <params>
             <param index="0">
               <value>
