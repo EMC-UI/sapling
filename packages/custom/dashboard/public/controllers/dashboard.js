@@ -18,32 +18,31 @@
               // fullScreen: true,
               config: {},
               title: "At a Glance"
-            }, {
-            type: "satya",
-            modalSize: 'lg',
-            // fullScreen: true,
-            config: {},
-            title: "Test Results By Components"
-          }
+            }
           ]
         },
           {
             styleClass: "col-md-6",
+            widgets: [
+              {
+                type: "satya",
+                modalSize: 'lg',
+                // fullScreen: true,
+                config: {},
+                title: "Test Results By Component"
+              }
+            ]
+          },
+          {
+            styleClass: "col-md-12",
             widgets: [{
               type: "srinivas",
               modalSize: 'lg',
               // fullScreen: true,
               config: {},
               title: "By Components"
-            },
-            {
-              type: "duc",
-              // fullScreen: true,
-              modalSize: 'lg',
-              config: {},
-              title: "Bugs Count Summary"
             }
-              ]
+            ]
           },
           {
             styleClass: "col-md-12",
@@ -54,7 +53,19 @@
               config: {},
               title: "Failed Test Cases"
             }]
-          }]
+          },
+          {
+            styleClass: "col-md-6",
+            widgets: [{
+              type: "duc",
+              // fullScreen: true,
+              modalSize: 'lg',
+              config: {},
+              title: "Bugs Count Summary"
+            }
+              ]
+          }
+          ]
       }]
     };
 
