@@ -5,8 +5,30 @@
 
     function GauravController($scope, GauravService) {
 
-        $scope.title = 'Guarav Page';
+     /* $scope.title = 'Acceptance Test Results - Configuration';
+      var person1 = {name: "Duc",age: 25, sex: "male"};
+      var person2 = {name: "Gaurav",age: 25, sex: "supermale"};
+      $scope.persons=[person1,person2];
+      */
+      //$scope.demotitle = 'Hello World !';
+
+      GauravService.getPersons().then(successFn, failFn);
+
+      function successFn(response)
+      {
+        debugger;
+        $scope.persons=response.data;
+      }
+      function failFn(err){
+        debugger;
+      }
+
+
+
+
+
     }
+
 
     angular
         .module('mean.gaurav')

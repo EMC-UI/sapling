@@ -4,7 +4,10 @@
     function GauravService($http) {
         return {
             getExamples: function() {
-                return $http.get('/api/gaurav/example');
+                return $http.get('/api/gaurav/title');
+            },
+            getPersons: function(){
+              return $http.get('api/gaurav/persons')
             }
         };
     }

@@ -19,7 +19,7 @@ Srinivas.register(function(app) {
 
   //We are adding a link to the main menu for all authenticated users
   Srinivas.menus.add({
-    title: 'Srinivas',
+    title: 'Tests Details',
     link: 'srinivas',
     roles: ['authenticated'],
     menu: 'main'

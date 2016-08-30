@@ -1,5 +1,9 @@
 <div ng-controller="GauravDashboardController" ng-click="dashboardClick()">
-    <canvas id="bar" class="chart chart-bar"
-            chart-data="data" chart-labels="labels" chart-series="series">
+  <p>Summary</p>
+    <script src="node_modules/chart.js/Chart.min.js"></script>
+    <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+    <canvas id="doughnut" class="chart chart-doughnut"
+            chart-data="data" chart-labels="labels">
     </canvas>
+
 </div>

@@ -20,7 +20,7 @@ Duc.register(function(app) {
 
   //We are adding a link to the main menu for all authenticated users
   Duc.menus.add({
-    title: 'Duc',
+    title: 'BugZilla',
     link: 'duc',
     roles: ['authenticated'],
     menu: 'main'
