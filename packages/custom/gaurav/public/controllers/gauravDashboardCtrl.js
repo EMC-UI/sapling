@@ -40,7 +40,9 @@
       // $scope.data = [7, 2, 1];
       $scope.data = [$scope.totalPassed, $scope.totalFailed, $scope.totalSkipped];
 
-      $scope.colors = ["green", "red", "yellow"]
+      $scope.colors = ["#456F06", "#CD5C5C", "#F7D704"];
+
+
 
 
       // $scope.title = 'Gaurav Dashboard Widget - TBD';
