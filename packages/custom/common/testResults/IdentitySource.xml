@@ -1125,7 +1125,7 @@
     </test> <!-- POST on userGroups with one identitysource in identitySourceGroup and role sys admin and login to skyline using the user under the group AD -->
     <test name="Update userGroup description" duration-ms="1351" started-at="2016-08-24T19:38:55Z" finished-at="2016-08-24T19:38:57Z">
       <class name="aaa.tests.UserGroupsCRUDTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:aaa.tests.UserGroupsCRUDTest@553f17c]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:55Z" finished-at="2016-08-24T12:38:55Z">
+        <test-method status="FAIL" signature="setUp()[pri:0, instance:aaa.tests.UserGroupsCRUDTest@553f17c]" name="setUp" is-config="true" duration-ms="0" started-at="2016-08-24T12:38:55Z" finished-at="2016-08-24T12:38:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
