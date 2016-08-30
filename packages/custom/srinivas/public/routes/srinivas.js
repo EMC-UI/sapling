@@ -14,5 +14,4 @@
         .config(Srinivas);
 
     Srinivas.$inject = ['$stateProvider'];
-
 })();

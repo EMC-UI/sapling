@@ -1,3 +1,28 @@
 <div ng-controller="SrinivasDashboardController" ng-click="dashboardClick()">
-  {{title}}
+  <h3>{{title}} {{acceptanceStatus}}</h3>
+
+        <table st-table="rowCollection" class="table table-striped">
+            <thread>
+                <tr>
+                    <th>Component Name</th>
+                    <th>Total Tests</th>
+                    <th>Total Passed</th>
+                    <th>Total Failed</th>
+                </tr>
+            </thread>
+            <tbody>
+            <tr class="ng-scope" ng-repeat="testResult in aggResults">
+                <td>{{testResult.suite.name}}</td>
+                <td>{{testResult.total}}</td>
+                <td>{{testResult.passed}}</td>
+                <td>{{testResult.failed}}</td>
+            </tr>
+            <tr class="ng-scope">
+                <td>Grand Total</td>
+                <td>{{totalTests}}</td>
+                <td>{{totalPassed}}</td>
+                <td>{{totalFailed}}</td>
+            </tr>
+            </tbody>
+        </table>
 </div>
