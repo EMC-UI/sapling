@@ -12,7 +12,20 @@
     $scope.totalPassed=0;
     $scope.totalFailed=0;
 
+    $scope.labels = ["Passed", "Failed", "Skipped"];
+    // $scope.data = [7, 2, 1];
+
+
+    $scope.colors = ["#456F06", "#CD5C5C", "#F7D704"];
+
+    // $scope.title = 'Gaurav Dashboard Widget - TBD';
+
+    $scope.dashboardClick = function () {
+      $state.go('gaurav');
+    };
+
     CommonService.getTestResults().then(Onsuccess, Onfailure);
+
 
     function Onsuccess(res){
       $scope.aggResults=res.data;
@@ -21,38 +34,30 @@
     function Onfailure(err){
       console.log(err);
     }
+
     var index=0;
 
     function calTotals () {
       $scope.totalTests = 0;
       $scope.totalPassed = 0;
       $scope.totalFailed = 0;
+      debugger;
       for (index = 0; index < $scope.aggResults.length; ++index) {
         $scope.totalTests = $scope.totalTests + parseInt($scope.aggResults[index].total);
         $scope.totalPassed = $scope.totalPassed + parseInt($scope.aggResults[index].passed);
         $scope.totalFailed = $scope.totalFailed + parseInt($scope.aggResults[index].failed);
         $scope.totalSkipped = $scope.totalSkipped + parseInt($scope.aggResults[index].skipped);
       }
-      if ($scope.totalFailed == 0) {
+      $scope.data = [$scope.totalPassed, $scope.totalFailed, $scope.totalSkipped];
+      if ($scope.totalFailed === 0 && $scope.totalSkipped ===0) {
         return "PASSED";
       }
-      $scope.labels = ["Passed", "Failed", "Skipped"];
-      // $scope.data = [7, 2, 1];
-      $scope.data = [$scope.totalPassed, $scope.totalFailed, $scope.totalSkipped];
-
-      $scope.colors = ["#456F06", "#CD5C5C", "#F7D704"];
-
-
-
-
-      // $scope.title = 'Gaurav Dashboard Widget - TBD';
-
-      $scope.dashboardClick = function () {
-        $state.go('gaurav');
-      };
-
+      else{
+        return "Failed";
+      }
 
     }
+
 
   } //end of controller
 

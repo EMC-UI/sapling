@@ -1,5 +1,8 @@
 <div ng-controller="GauravDashboardController" ng-click="dashboardClick()">
-  <p>Summary</p>
+  <p>Aggreated Result - {{acceptanceStatus}} </p>
+    <p>Passed - {{totalPassed}}</p>
+    <p>Failed - {{totalFailed}} </p>
+
     <script src="node_modules/chart.js/Chart.min.js"></script>
     <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
     <canvas id="doughnut" class="chart chart-doughnut"
