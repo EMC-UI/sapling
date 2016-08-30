@@ -1,3 +1,18 @@
-<div>
-  <h1>{{title2}}</h1>
+<div style="border: 2px solid; margin-bottom: 1em" ng-repeat="testResult in testResults">
+  <h1 style="text-align: center">{{testResult.suite.name}}</h1>
+
+  <div style="padding-left: 1em">
+    <div>Total # Test: <b>{{testResult.total}}</b></div>
+    <div># Test Passed: <b>{{testResult.passed}}</b></div>
+    <div># Test Failed: <b>{{testResult.failed}}</b></div>
+  </div>
+
+
+  <div style="padding-left: 1em">
+    <h2>Test Cases</h2>
+    <div ng-repeat="test in testResult.suite.tests">
+      <div>{{test.name}} - <b>{{test.status}}</b></div>
+    </div>
+  </div>
+
 </div>
