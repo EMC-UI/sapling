@@ -22,7 +22,7 @@
             modalSize: 'lg',
             // fullScreen: true,
             config: {},
-            title: "Satya - Bugs By Components"
+            title: "Satya - Test Results"
           }
           ]
         },
