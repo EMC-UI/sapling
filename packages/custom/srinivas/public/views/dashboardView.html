@@ -1,5 +1,5 @@
 <div ng-controller="SrinivasDashboardController" ng-click="dashboardClick()">
-  <h3>{{title}} {{acceptanceStatus}}</h3>
+  <h3>{{title}} - <span class="{{acceptanceStatus != 'FAILED'?'srini-dash-tests-pass':'srini-dash-tests-fail'}}">{{acceptanceStatus}}</span> </h3>
 
         <table st-table="rowCollection" class="table table-striped">
             <thread>
@@ -18,10 +18,10 @@
                 <td>{{testResult.failed}}</td>
             </tr>
             <tr class="ng-scope">
-                <td>Grand Total</td>
+                <td><b>Grand Total</b></td>
                 <td>{{totalTests}}</td>
-                <td>{{totalPassed}}</td>
-                <td>{{totalFailed}}</td>
+                <td class="srini-dash-tests-pass">{{totalPassed}}</td>
+                <td class="srini-dash-tests-fail">{{totalFailed}}</td>
             </tr>
             </tbody>
         </table>

@@ -19,7 +19,7 @@ Satya.register(function(app) {
 
   //We are adding a link to the main menu for all authenticated users
   Satya.menus.add({
-    title: 'Satya',
+    title: 'All Tests',
     link: 'satya',
     roles: ['authenticated'],
     menu: 'main'

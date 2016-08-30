@@ -1,3 +1,9 @@
 .srinivas-example span {
     font-weight: bold;
 }
+.srini-dash-tests-pass{
+  color:green;
+}
+.srini-dash-tests-fail{
+  color:red;
+}

@@ -12,7 +12,7 @@
         <tbody>
           <tr ng-repeat="test in testResult.suite.tests" class="ng-scope">
               <td>{{test.name}}</td>
-              <td>{{test.status}}</td>
+              <td class="{{test.status != 'FAIL'?'srini-dash-tests-pass':'srini-dash-tests-fail'}}">{{test.status}}</td>
           </tr>
         </tbody>
     </table>

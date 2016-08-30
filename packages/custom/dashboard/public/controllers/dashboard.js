@@ -34,7 +34,7 @@
               modalSize: 'lg',
               // fullScreen: true,
               config: {},
-              title: "By Features"
+              title: "By Components"
             },
             {
               type: "duc",
