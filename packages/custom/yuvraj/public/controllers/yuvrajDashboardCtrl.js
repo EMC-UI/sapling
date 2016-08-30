@@ -9,9 +9,7 @@
 
     function loadData() {
       $scope.rowCollection = [
-        // {componentName: 'AAA', totalTestCount: 85, testFailedCount: 5},
-        // {componentName: 'ConfigMgr', totalTestCount: 40, testFailedCount: 2},
-        // {componentName: 'SysMgr', totalTestCount: 65, testFailedCount: 7}
+        {testcaseName: '', componentName: ''}
       ];
     }
 
@@ -22,21 +20,40 @@
     };
 
     function getTestResultsSuccess(response) {
-      // console.log(JSON.stringify(result, null, 2));
-      var testResults = response.data;
+      debugger;
+      var allFailedTests = [];
+      var allTestResults = response.data;
       $scope.rowCollection = [];
-      testResults.forEach(function(testResult) {
-        var tableRowData = {
-          componentName: testResult.suite.name,
-          totalTestCount: testResult.total,
-          testPassedCount: testResult.passed,
-          testFailedCount: testResult.failed
-        };
-        $scope.rowCollection.push(tableRowData);
+      allTestResults.forEach(function(testResult) {
+        var suiteName = testResult.suite.name;
+        var allTests = testResult.suite.tests;
+        var failedTests = [];
+        allTests.forEach(function(test) {
+          if(test.status === 'FAIL') {
+            failedTests.push(test);
+          }
+        });
+
+        if (failedTests.length > 0){
+          var tempResult = {testCases : failedTests, componentName : suiteName};
+          allFailedTests.push(tempResult);
+          failedTests = [];
+        }
+
+      });
+
+      allFailedTests.forEach(function(failedTestResult) {
+        var tests = failedTestResult.testCases;
+        tests.forEach(function(test) {
+          var row = {testcaseName: test.name, componentName: failedTestResult.componentName};
+          $scope.rowCollection.push(row);
+          });
       });
     }
 
+
     function getTestResultsFailed(err) {
+      debugger;
       console.log('***getTestResults() Failed!');
       console.log(JSON.stringify(err, null, 2));
     }

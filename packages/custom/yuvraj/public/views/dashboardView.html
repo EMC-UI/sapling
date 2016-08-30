@@ -1,19 +1,17 @@
 <div ng-controller="YuvrajDashboardController" ng-click="dashboardClick()">
+
+  <h1>Failed Test Cases</h1>
   <table st-table="rowCollection" class="table table-striped">
     <thead>
     <tr>
+      <th>Test Case</th>
       <th>Component Name</th>
-      <th>Total # Tests</th>
-      <th># Passed</th>
-      <th># Failed</th>
     </tr>
     </thead>
     <tbody>
     <tr ng-repeat="row in rowCollection">
+      <td>{{row.testcaseName}}</td>
       <td>{{row.componentName}}</td>
-      <td>{{row.totalTestCount}}</td>
-      <td>{{row.testPassedCount}}</td>
-      <td>{{row.testFailedCount}}</td>
     </tr>
     </tbody>
   </table>
