@@ -1,3 +1,10 @@
-<div ng-controller="SrinivasDashboardController" ng-click="dashboardClick()">
+<div ng-controller="SrinivasDashboardController" ng-click="dashboardClick()" id ="sri">
   {{title}}
+    <script src="node_modules/chart.js/Chart.min.js"></script>
+    <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
+    <canvas id="base" class="chart-horizontal-bar"
+            chart-data="data" chart-labels="labels" chart-options="options" >
+    </canvas>
 </div>
+
+

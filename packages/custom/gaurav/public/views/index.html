@@ -1,3 +1,14 @@
 <div>
- <h1>{{title}}</h1>
+
+ <h1><font color = "blue">{{title}}</font></h1>
+    <p><font size = "8">{{demotitle}}</font></p>
+    <div ng-repeat="person in persons">
+        <ul>
+            Name: {{person.name}}
+            Age: {{person.age}}
+            Sex: {{person.sex}}
+        </ul>
+
+    </div>
+
 </div>

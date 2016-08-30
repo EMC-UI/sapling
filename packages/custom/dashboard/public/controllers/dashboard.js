@@ -6,18 +6,19 @@
   function DashboardController($scope) {
 
     $scope.model = {
-      title: "QA Portal",
+      title: "Acceptance Test Results",
       structure: "6-6",
       rows: [{
         columns: [{
           styleClass: "col-md-6",
-          widgets: [{
-            type: "srinivas",
-            modalSize: 'lg',
-            // fullScreen: true,
-            config: {},
-            title: "Srinivas Widget"
-          }, {
+          widgets: [
+            {
+              type: "gaurav",
+              modalSize: 'lg',
+              // fullScreen: true,
+              config: {},
+              title: "At a Glance"
+            }, {
             type: "satya",
             modalSize: 'lg',
             // fullScreen: true,
@@ -29,18 +30,20 @@
           {
             styleClass: "col-md-6",
             widgets: [{
+              type: "srinivas",
+              modalSize: 'lg',
+              // fullScreen: true,
+              config: {},
+              title: "By Features"
+            },
+            {
               type: "duc",
               // fullScreen: true,
               modalSize: 'lg',
               config: {},
               title: "Duc - Bugs Count Summary"
-            }, {
-              type: "gaurav",
-              modalSize: 'lg',
-              // fullScreen: true,
-              config: {},
-              title: "Gaurav Widget"
-            }]
+            }
+              ]
           },
           {
             styleClass: "col-md-12",

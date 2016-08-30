@@ -4,12 +4,24 @@
   /* jshint -W098 */
 
   function GauravDashboardController($scope, GauravService, $state) {
+    $scope.labels = ["Passed", "Failed", "Skipped"];
+    $scope.data = [7, 2, 1];
 
-    $scope.title = 'Gaurav Dashboard Widget - TBD';
 
-    $scope.dashboardClick = function() {
+
+
+
+
+    // $scope.title = 'Gaurav Dashboard Widget - TBD';
+
+    $scope.dashboardClick = function () {
       $state.go('gaurav');
     };
+
+
+
+
+
 
   } //end of controller
 
