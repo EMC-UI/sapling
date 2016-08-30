@@ -7,8 +7,16 @@
 
                 return $http.get('/api/srinivas/example');
 
-            }
+            },
+          getJsonsFromDB: function() {
+
+            return $http.get('/api/srinivas/getJsonsFromDB');
+
+          }
         };
+
+
+
     }
 
     angular
@@ -18,3 +26,5 @@
   SrinivasService.$inject = ['$http'];
 
 })();
+
+

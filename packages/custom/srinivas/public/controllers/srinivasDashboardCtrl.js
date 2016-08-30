@@ -1,35 +1,42 @@
 (function() {
   'use strict';
 
-
   /* jshint -W098 */
 
-  function SrinivasDashboardController($scope, SrinivasService, $state) {
+  function SrinivasDashboardController($scope, SrinivasService, $state, CommonService) {
+    $scope.acceptanceStatus="";
+    $scope.title = 'Aggregated eCDM Test Results ';
+    $scope.aggResults=[];
+    $scope.totalTests=0;
+    $scope.totalPassed=0;
+    $scope.totalFailed=0;
 
-    $scope.title = 'Srinivas Dashboard Widget - TBD';
-    $scope.labels = ['Configuration', 'Integration', 'SysMgr CRUD', 'AAA CRUD', 'ConfigMgr CRUD', 'Services'];
-    //$scope.series = ['Series A', 'Series B'];
+    CommonService.getTestResults().then(Onsuccess, Onfailure);
 
-    $scope.data = [65, 59, 80, 81, 56, 55, 40];
-    $scope.options = {
-      scales: {
-        xAxes: [{
-          gridLines: {
-            display: false
-          }
-        }],
-        yAxes: [{
-          gridLines: {
-            display: false
-          }
-        }]
+    function Onsuccess(res){
+      $scope.aggResults=res.data;
+      $scope.acceptanceStatus=calTotals();
+    }
+    function Onfailure(err){
+      console.log(err);
+    }
+    var index=0;
+
+    function calTotals (){
+      $scope.totalTests=0;
+      $scope.totalPassed=0;
+      $scope.totalFailed=0;
+      for(index=0;index<$scope.aggResults.length;++index){
+        $scope.totalTests=$scope.totalTests+parseInt($scope.aggResults[index].total);
+        $scope.totalPassed=$scope.totalPassed+parseInt($scope.aggResults[index].passed);
+        $scope.totalFailed=$scope.totalFailed+parseInt($scope.aggResults[index].failed);
       }
-    };
-
-
-
-
-
+      if($scope.totalFailed==0){
+        return "PASSED";
+      }
+      debugger;
+      return "FAILED";
+    }
     $scope.dashboardClick = function() {
       $state.go('srinivas');
     };
@@ -40,11 +47,6 @@
     .module('mean.srinivas')
     .controller('SrinivasDashboardController', SrinivasDashboardController);
 
-  SrinivasDashboardController.$inject = ['$scope', 'SrinivasService', '$state'];
+  SrinivasDashboardController.$inject = ['$scope', 'SrinivasService', '$state','CommonService'];
 
 })();
-
-
-
-
-

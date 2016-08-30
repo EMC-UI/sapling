@@ -1,3 +1,20 @@
 <div>
-  <h1>{{title}}</h1>
+  <h2>Extensive eCDM Test Results</h2>
+  <div ng-repeat="testResult in jsons">
+    <h3>{{testResult.suite.name}}</h3>
+    <table st-table="rowCollection" class="table table-striped">
+        <thread>
+            <tr>
+                <th>Test Name</th>
+                <th>Test Status</th>
+            </tr>
+        </thread>
+        <tbody>
+          <tr ng-repeat="test in testResult.suite.tests" class="ng-scope">
+              <td>{{test.name}}</td>
+              <td>{{test.status}}</td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
 </div>

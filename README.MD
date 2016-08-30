@@ -2,10 +2,10 @@
 QAPortal - Sapling Team's project that use the MEAN stack.
 
 ## Open Sources
-* *Code Generator* - <a href="https://github.com/linnovate/mean</a>
-* *Dashboard* - <a href="https://github.com/angular-dashboard-framework/angular-dashboard-framework</a>
-* *Chart* - <a href="https://github.com/jtblin/angular-chart.js</a>
-* *Table* - <a href="https://github.com/lorenzofox3/Smart-Table</a>
+* *Code Generator* - <a href="https://github.com/linnovate/mean"</a>
+* *Dashboard* - <a href="https://github.com/angular-dashboard-framework/angular-dashboard-framework"</a>
+* *Chart* - <a href="https://github.com/jtblin/angular-chart.js"</a>
+* *Table* - <a href="https://github.com/lorenzofox3/Smart-Table"</a>
 
 ## Prerequisite Technologies
 ### Linux

@@ -1,10 +1,28 @@
-<div ng-controller="SrinivasDashboardController" ng-click="dashboardClick()" id ="sri">
-  {{title}}
-    <script src="node_modules/chart.js/Chart.min.js"></script>
-    <script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>
-    <canvas id="base" class="chart-horizontal-bar"
-            chart-data="data" chart-labels="labels" chart-options="options" >
-    </canvas>
+<div ng-controller="SrinivasDashboardController" ng-click="dashboardClick()">
+  <h3>{{title}} {{acceptanceStatus}}</h3>
+
+        <table st-table="rowCollection" class="table table-striped">
+            <thread>
+                <tr>
+                    <th>Component Name</th>
+                    <th>Total Tests</th>
+                    <th>Total Passed</th>
+                    <th>Total Failed</th>
+                </tr>
+            </thread>
+            <tbody>
+            <tr class="ng-scope" ng-repeat="testResult in aggResults">
+                <td>{{testResult.suite.name}}</td>
+                <td>{{testResult.total}}</td>
+                <td>{{testResult.passed}}</td>
+                <td>{{testResult.failed}}</td>
+            </tr>
+            <tr class="ng-scope">
+                <td>Grand Total</td>
+                <td>{{totalTests}}</td>
+                <td>{{totalPassed}}</td>
+                <td>{{totalFailed}}</td>
+            </tr>
+            </tbody>
+        </table>
 </div>
-
-

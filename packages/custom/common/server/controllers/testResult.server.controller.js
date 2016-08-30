@@ -3,6 +3,7 @@
 /**
  * Module dependencies.
  */
+require('../models/testResult.server.model');
 var mongoose = require('mongoose'),
   TestResult = mongoose.model('TestResult');
 
