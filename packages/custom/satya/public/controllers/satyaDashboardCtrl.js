@@ -14,10 +14,6 @@
       []  //skipped data points for each testResult
     ];
 
-    $scope.dashboardClick = function() {
-      $state.go('srinivas');
-    };
-
     function getTestResultsSuccess(response) {
       // console.log(JSON.stringify(result, null, 2));
       var testResults = response.data;

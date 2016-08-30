@@ -19,7 +19,7 @@ Yuvraj.register(function(app) {
 
   //We are adding a link to the main menu for all authenticated users
   Yuvraj.menus.add({
-    title: 'Yuvraj',
+    title: 'Failed Tests',
     link: 'yuvraj',
     roles: ['authenticated'],
     menu: 'main'
