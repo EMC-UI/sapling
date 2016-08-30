@@ -34,10 +34,14 @@
               modalSize: 'lg',
               config: {},
               title: "Duc - Bugs Count Summary"
-            }, {
+            }]
+          },
+          {
+            styleClass: "col-md-12",
+            widgets: [{
               type: "gaurav",
-              modalSize: 'lg',
               // fullScreen: true,
+              modalSize: 'lg',
               config: {},
               title: "Gaurav Widget"
             }]

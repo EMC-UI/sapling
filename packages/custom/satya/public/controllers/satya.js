@@ -5,7 +5,8 @@
 
     function SatyaController($scope, SatyaService) {
 
-        $scope.title = 'Satya Page';
+        $scope.title2 = 'Satya Page';
+      // $scope.xx = 'hello';
 
     }
 
