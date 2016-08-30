@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="20" passed="20">
+<testng-results skipped="0" failed="1" total="20" passed="19">
   <reporter-output>
   </reporter-output>
   <suite name="OVA Acceptance Test" duration-ms="20343" started-at="2016-08-24T19:39:12Z" finished-at="2016-08-24T19:39:32Z">
@@ -357,7 +357,7 @@
     </test> <!-- Service test - Log Manager -->
     <test name="Service test - Event" duration-ms="1014" started-at="2016-08-24T19:39:26Z" finished-at="2016-08-24T19:39:27Z">
       <class name="ovaAcceptance.tests.ovaAcceptanceTest">
-        <test-method status="PASS" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@13805618]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:26Z" finished-at="2016-08-24T12:39:27Z">
+        <test-method status="FAIL" signature="testSkylineServices(java.lang.String, java.lang.String, int)[pri:0, instance:ovaAcceptance.tests.ovaAcceptanceTest@13805618]" name="testSkylineServices" duration-ms="1013" started-at="2016-08-24T12:39:26Z" finished-at="2016-08-24T12:39:27Z">
           <params>
             <param index="0">
               <value>
