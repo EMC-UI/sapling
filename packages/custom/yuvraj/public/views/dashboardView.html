@@ -3,14 +3,16 @@
     <thead>
     <tr>
       <th>Component Name</th>
-      <th>Total Test Count</th>
-      <th># Test Failed</th>
+      <th>Total # Tests</th>
+      <th># Passed</th>
+      <th># Failed</th>
     </tr>
     </thead>
     <tbody>
     <tr ng-repeat="row in rowCollection">
       <td>{{row.componentName}}</td>
       <td>{{row.totalTestCount}}</td>
+      <td>{{row.testPassedCount}}</td>
       <td>{{row.testFailedCount}}</td>
     </tr>
     </tbody>

@@ -22,7 +22,7 @@
             modalSize: 'lg',
             // fullScreen: true,
             config: {},
-            title: "Satya - Bugs By Components"
+            title: "Satya - Test Results"
           }
           ]
         },
@@ -34,10 +34,14 @@
               modalSize: 'lg',
               config: {},
               title: "Duc - Bugs Count Summary"
-            }, {
+            }]
+          },
+          {
+            styleClass: "col-md-12",
+            widgets: [{
               type: "gaurav",
-              modalSize: 'lg',
               // fullScreen: true,
+              modalSize: 'lg',
               config: {},
               title: "Gaurav Widget"
             }]

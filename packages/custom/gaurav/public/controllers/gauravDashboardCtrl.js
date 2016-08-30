@@ -3,13 +3,8 @@
 
   /* jshint -W098 */
 
-  function GauravDashboardController($scope, GauravService, $state) {
-
-    $scope.title = 'Gaurav Dashboard Widget - TBD';
-
-    $scope.dashboardClick = function() {
-      $state.go('gaurav');
-    };
+  function GauravDashboardController($scope, GauravService, CommonService, $state) {
+    
 
   } //end of controller
 
@@ -17,6 +12,6 @@
     .module('mean.gaurav')
     .controller('GauravDashboardController', GauravDashboardController);
 
-  GauravDashboardController.$inject = ['$scope', 'GauravService', '$state'];
+  GauravDashboardController.$inject = ['$scope', 'GauravService', 'CommonService', '$state'];
 
 })();
