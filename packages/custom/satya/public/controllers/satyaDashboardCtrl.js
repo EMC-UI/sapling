@@ -18,16 +18,38 @@
       // console.log(JSON.stringify(result, null, 2));
       var testResults = response.data;
       $scope.labels = [];
-      $scope.data[0] =[];
-      $scope.data[1] =[];
-      $scope.data[2] =[];
+      $scope.datas=[];
+      var data =[];
+      var data1=[];
+      var data2=[];
+      // $scope.data[2] =[];
+      $scope.options = {
+        scales: {
+          xAxes: [{
+            stacked: true,
+              gridLines: {
+                display: false
+              }
+
+          }
+
+          ],
+          yAxes: [{
+            stacked: true,
+            gridLines: {
+              display: false
+            }
+          }]
+        }
+      };
       testResults.forEach(function(testResult) {
         $scope.labels.push(testResult.suite.name);
-        $scope.data[0].push(parseInt(testResult.passed));
-        $scope.data[1].push(parseInt(testResult.failed));
-        $scope.data[2].push(parseInt(testResult.skipped));
+        data.push(parseInt(testResult.passed));
+        data1.push(parseInt(testResult.failed));
+        data2.push(parseInt(testResult.skipped));
       });
       $scope.testResults = response.data;
+      $scope.datas=[data,data1,data2];
     }
 
     function getTestResultsFailed(err) {

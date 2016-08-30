@@ -23,7 +23,7 @@
             modalSize: 'lg',
             // fullScreen: true,
             config: {},
-            title: "Satya - Bugs By Components"
+            title: "Test Results By Components"
           }
           ]
         },
@@ -41,7 +41,7 @@
               // fullScreen: true,
               modalSize: 'lg',
               config: {},
-              title: "Duc - Bugs Count Summary"
+              title: "Bugs Count Summary"
             }
               ]
           },
@@ -52,7 +52,7 @@
               // fullScreen: true,
               modalSize: 'lg',
               config: {},
-              title: "Yuvraj Widget"
+              title: "Failed Test Cases"
             }]
           }]
       }]
